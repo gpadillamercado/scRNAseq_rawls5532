@@ -924,8 +924,6 @@ ggplot(data = Fulldf3 %>% filter(cluster %in% c("Enterocytes (segment 1)",
         axis.text = element_text(size = 8, hjust = 1, angle = 30, color = "black")) +
   geom_hline(yintercept = 0, linetype = 2, color = "grey30")
 ggpreview(height = 2.5, width = 2.5, units = "in")
-ggsave(
-  "C:/Users/drako/Dropbox/Rscripts/F31 FIGURES/Bagnat_scRNASeq_Refined.pdf", height = 2.5, width = 2.5, units = "in")
 
 ### End Grant Figures
 Fulldf3 %>% filter(p_val_adj < 0.05,
